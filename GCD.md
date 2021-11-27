@@ -1,5 +1,7 @@
 # GCD Practice
 
+> 關於 `GCD` 使用上的技巧，部分則會有Sample Code來做輔助暸解
+
 * ## [DispatchWorkItem](https://stackoverflow.com/questions/54058634/what-are-the-benefits-of-using-dispatchworkitem-in-swift)
 
 ```swift
