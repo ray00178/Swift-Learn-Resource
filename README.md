@@ -2,6 +2,8 @@
 
 ## 📘 Learn Directory
 
+- ### [Learing]](https://github.com/ray00178/Swift-Learn-Resource/blob/main/Learing.md)
+
 - ### [GCD](https://github.com/ray00178/Swift-Learn-Resource/blob/main/GCD.md)
 
 ---
