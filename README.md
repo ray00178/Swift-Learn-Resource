@@ -11,7 +11,7 @@
 ## 🍎 iOS
 
 | Tag | Resource Url |
-| :---: | :---: |
+| :---: | :--- |
 | 🍎 iOS Developer blog | [Donny Wals](https://www.donnywals.com/the-blog) |
 | 🍎 iOS Developer blog | [Avander Lee](https://www.avanderlee.com/recents) |
 | 🍎 iOS Developer blog | [Sarunw](https://sarunw.com/posts/) |
