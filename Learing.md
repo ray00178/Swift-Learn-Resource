@@ -12,8 +12,8 @@ error: exportArchive: Provisioning profile "003 Sinyi IM ShareExtension PROD_Dis
 
 ## 2. 包版時，專案的Build未填寫導致包版後無法安裝問題
 
-![Learn-2 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-2-1.png){:height="165px" width="600px"}
+![Learn-2 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-2-1.png)
 
 ## 3. UICollectionViewFlowLayout，可以override targetContentOffset()，來自定滑動後的位置
 
-![Learn-3 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-3-1.png){:height="434px" width="600px"}
+![Learn-3 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-3-1.png)
