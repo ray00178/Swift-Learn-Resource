@@ -20,7 +20,22 @@ error: exportArchive: Provisioning profile "003 Sinyi IM ShareExtension PROD_Dis
 
 1. UICollectionViewFlowLayout，可以override targetContentOffset()，來自定滑動後的位置
 
-![Learn-3 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-3-1.png)
+```swift
+/// 自定義多種滑動位置CollectionFlowLayout
+/// - Reference = https://stackoverflow.com/questions/23990863/uicollectionview-cell-scroll-to-centre
+class MultipleCollectionFlowLayout: UICollectionViewFlowLayout {
+
+    override func prepare() {
+        super.prepare()
+    }
+    
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint,
+                                      withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        return super.targetContentOffset(forProposedContentOffset: proposedContentOffset,
+                                         withScrollingVelocity: velocity)
+    }
+}
+```
 
 ## WKWebView
 
