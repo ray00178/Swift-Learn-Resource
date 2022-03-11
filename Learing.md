@@ -41,12 +41,12 @@ class MultipleCollectionFlowLayout: UICollectionViewFlowLayout {
 
 1. 使用Safari來Debug WKWebView
 
-- ### 終端機輸入 `defaults write {com.your.bundle.id} WebKitDeveloperExtras -bool true`
+   - 終端機輸入 `defaults write {com.your.bundle.id} WebKitDeveloperExtras -bool true`
 
-- ### 手機 -> 設定 -> Safari -> 進階 -> 網頁檢視器 on
+   - 手機 -> 設定 -> Safari -> 進階 -> 網頁檢視器 on
 
-![Learn-4-1 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-4-1.png)
+    ![Learn-4-1 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-4-1.png)
 
-- ### 開啟Safari後並點擊上方【開發】Tab，找到目前連接裝置點擊後，即可開始Debug
+   - 開啟Safari後並點擊上方【開發】Tab，找到目前連接裝置點擊後，即可開始Debug
 
-![Learn-4-2 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-4-2.png)
+    ![Learn-4-2 image](https://github.com/ray00178/Swift-Learn-Resource/blob/main/images/learn-4-2.png)
