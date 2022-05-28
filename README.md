@@ -8,7 +8,7 @@ Hello, 我是Ray也可以叫我張a, 這裡記錄著開發(學習)iOS的經驗�
 
 - ### [GCD](https://github.com/ray00178/Swift-Learn-Resource/blob/main/GCD.md)
 
-- ### [SwiftFormat-Rule][https://github.com/ray00178/Swift-Learn-Resource/blob/main/GCDSwiftFormat-Rule.md]
+- ### [SwiftFormat-Rule](https://github.com/ray00178/Swift-Learn-Resource/blob/main/SwiftFormat-Rule.md)
 
 ## 🍎 iOS 資源
 
