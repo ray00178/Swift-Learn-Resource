@@ -1,6 +1,6 @@
-Rules = https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
+# [Format Rules](https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md)
 
-# 1. andOperator
+## andOperator
 ```swift
 
 var x: String? = "Hello"
@@ -12,7 +12,7 @@ if x != nil && x!.isEmpty == false {}
 if let value = x, x.isEmpty == false {}
 ```
 
-# 2. anyObjectProtocol
+## anyObjectProtocol
 ```swift
 
 private lazy var anyView: UIView = {
@@ -25,7 +25,7 @@ private lazy var anyView: UIView = {
 private lazy var anyView: UIView = UIView()
 ```
 
-# 3. blankLinesAroundMark (與下方程式碼空一行)
+## blankLinesAroundMark (與下方程式碼空一行)
 ```swift
 
 // MARK: - Enum
@@ -38,7 +38,7 @@ enum Mode {}
 enum Mode {}
 ```
 
-# 4. blankLinesAtEndOfScope (Scope結束，移除多餘空行)
+## blankLinesAtEndOfScope (Scope結束，移除多餘空行)
 ```swift
 enum Mode {
 
@@ -58,7 +58,7 @@ enum Mode {
 }
 ```
 
-# 5. blankLinesAtStartOfScope (Scope開始，移除多餘空行)
+## blankLinesAtStartOfScope (Scope開始，移除多餘空行)
 ```swift
 extension Mode {
 
@@ -77,11 +77,11 @@ extension Mode {
 }
 ```
 
-# 6. blankLinesBetweenScopes
-# 7. braces
-# 8. consecutiveBlankLines
+## blankLinesBetweenScopes
+## braces
+## consecutiveBlankLines
 
-# 9. consecutiveSpaces (移除多餘空格)
+## consecutiveSpaces (移除多餘空格)
 ```swift
 if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptContent {}
 
@@ -90,7 +90,7 @@ if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptCon
 if let contentHandler = contentHandler, let bestAttemptContent = bestAttemptContent {}
 ```
 
-# 10. elseOnSameLine
+## elseOnSameLine
 ```swift
 if let contentHandler = contentHandler {
 
@@ -108,7 +108,7 @@ if let contentHandler = contentHandler {
 }
 ```
 
-# 10. emptyBraces
+## emptyBraces
 ```swift
 public init() {
 
@@ -119,9 +119,9 @@ public init() {
 public init() {}
 ```
 
-# 11. enumNamespaces
+## enumNamespaces
 
-# 12. extensionAccessControl
+## extensionAccessControl
 ```swift
 extension UIGestureRecognizer {
   public func clearActionKit() {}
@@ -134,9 +134,9 @@ public extension UIGestureRecognizer {
 }
 ```
 
-# 13. fileHeader
+## fileHeader
 
-# 14. hoistPatternLet
+## hoistPatternLet
 ```swift
 switch value {
   case .api(let emoji):
@@ -155,7 +155,7 @@ switch value {
 }
 ```
 
-# 15. indent
+## indent
 ```swift
 switch value {
   case .api(let emoji):
@@ -174,7 +174,7 @@ default:
 }
 ```
 
-# 16. initCoderUnavailable
+## initCoderUnavailable
 ```swift
 open class ToolBarView: UIView {
   required public init?(coder aDecoder: NSCoder) {
@@ -193,11 +193,11 @@ open class ToolBarView: UIView {
 
 ```
 
-# 17. leadingDelimiters
-# 18. linebreakAtEndOfFile
-# 19. linebreaks
+## leadingDelimiters
+## linebreakAtEndOfFile
+## linebreaks
 
-# 20. modifierOrder
+## modifierOrder
 ```swift
 private override init() {}
 
@@ -207,19 +207,19 @@ override private init() {}
 
 ```
 
-# 21. numberFormatting
+## numberFormatting
 ```swift
-let range: (lower: Double, upper: Double, step: Int) = (0, 100000, 10000)
+let range: (lower: Double, upper: Double, step: Int) = (0,#000,#00)
 let color: UIColor = UIColor(netHex: 0xffffff)
 
 // to
 
-let range: (lower: Double, upper: Double, step: Int) = (0, 100_000, 10000)
+let range: (lower: Double, upper: Double, step: Int) = (0,#_000,#00)
 let color: UIColor = UIColor(netHex: 0xFFFFFF)
 
 ```
 
-# 22. preferKeyPath
+## preferKeyPath
 ```swift
 var array: [String] = []
 array.append(contentsOf: cityModels.compactMap({ $0.name }))
@@ -231,9 +231,9 @@ array.append(contentsOf: cityModels.compactMap(\.name))
 
 ```
 
-# 23. redundantBackticks
+## redundantBackticks
 
-# 24. redundantBreak
+## redundantBreak
 ```swift
 switch value {
 case "C":
@@ -254,9 +254,9 @@ default:
 
 ```
 
-# 25. redundantExtensionACL
+## redundantExtensionACL
 
-# 26. redundantFileprivate
+## redundantFileprivate
 ```swift
 fileprivate func showPicker() {}
 
@@ -266,9 +266,9 @@ private func showPicker() {}
 
 ```
 
-# 27. redundantGet
+## redundantGet
 
-# 28. redundantInit
+## redundantInit
 ```swift
 let barItem = UIBarButtonItem.init(customView: btnItem)
 
@@ -278,7 +278,7 @@ let barItem = UIBarButtonItem(customView: btnItem)
 
 ```
 
-# 29. redundantLet
+## redundantLet
 
 ```swift
 let _ = 1 + 1
@@ -289,7 +289,7 @@ _ = 1 + 1
 
 ```
 
-# 30. redundantLetError
+## redundantLetError
 
 ```swift
 do {
@@ -304,7 +304,7 @@ do {
 
 ```
 
-# 31. redundantNilInit
+## redundantNilInit
 
 ```swift
 var googleErrorHandler: ((_ errorMsg: String) -> Void)? = nil
@@ -315,9 +315,9 @@ var googleErrorHandler: ((_ errorMsg: String) -> Void)?
 
 ```
 
-# 32. redundantObjc
+## redundantObjc
 
-# 33. redundantParens
+## redundantParens
 
 ```swift
 if (isDeleted == false) {}
@@ -328,7 +328,7 @@ if isDeleted == false {}
 
 ```
 
-# 34. redundantPattern
+## redundantPattern
 
 ```swift
 switch entry {
@@ -345,7 +345,7 @@ case .myVerifyId:
 
 ```
 
-# 35. redundantRawValues
+## redundantRawValues
 
 ```swift
 enum Entry: String {
@@ -360,7 +360,7 @@ enum Entry: String {
 
 ```
 
-# 36. redundantReturn
+## redundantReturn
 
 ```swift
 func numberOfItems(in carousel: iCarousel) -> Int {
@@ -375,7 +375,7 @@ func numberOfItems(in carousel: iCarousel) -> Int {
 
 ```
 
-# 37. redundantSelf
+## redundantSelf
 
 ```swift
 extension Array {
@@ -394,7 +394,7 @@ extension Array {
 
 ```
 
-# 38. redundantType
+## redundantType
 
 ```swift
 class AppCore: NSObject {
@@ -415,11 +415,11 @@ class AppCore: NSObject {
 
 ```
 
-# 39. redundantVoidReturnType
+## redundantVoidReturnType
 
-# 40. semicolons
+## semicolons
 
-# 41. sortedImports
+## sortedImports
 
 ```swift
 import UIKit
@@ -432,7 +432,7 @@ import UIKit
 
 ```
 
-# 42. spaceAroundBraces
+## spaceAroundBraces
 
 ```swift
 let value = dataset.filter{ $0.type == .homeLife }.compactMap { $0.traceId }
@@ -443,9 +443,9 @@ let value = dataset.filter { $0.type == .homeLife }.compactMap { $0.traceId }
 
 ```
 
-# 43. spaceAroundBrackets
+## spaceAroundBrackets
 
-# 44. spaceAroundComments
+## spaceAroundComments
 
 ```swift
 if arr?.count == 0 {// 空陣列
@@ -458,9 +458,9 @@ if arr?.count == 0 { // 空陣列
 
 ```
 
-# 45. spaceAroundGenerics
+## spaceAroundGenerics
 
-# 46. spaceAroundOperators
+## spaceAroundOperators
 
 ```swift
 static func saveMemberPhone(_ phone : String) {}
@@ -471,7 +471,7 @@ static func saveMemberPhone(_ phone: String) {}
 
 ```
 
-# 47. spaceAroundParens
+## spaceAroundParens
 
 ```swift
 private (set) var trend: CommunityContent.Trend?
@@ -482,7 +482,7 @@ private(set) var trend: CommunityContent.Trend?
 
 ```
 
-# 48. spaceInsideBraces
+## spaceInsideBraces
 
 ```swift
 mainLayer.sublayers?.forEach({$0.removeFromSuperlayer()})
@@ -493,7 +493,7 @@ mainLayer.sublayers?.forEach({ $0.removeFromSuperlayer() })
 
 ```
 
-# 49. spaceInsideBrackets
+## spaceInsideBrackets
 
 ```swift
 let array = [ "A", "B", "C" ]
@@ -504,7 +504,7 @@ let array = ["A", "B", "C"]
 
 ```
 
-# 50. spaceInsideBrackets
+## spaceInsideBrackets
 
 ```swift
 //AppCore.saveHomeInfo(greetings: "", scheduleID: "")
@@ -517,9 +517,9 @@ let array = ["A", "B", "C"]
 
 ```
 
-# 51. spaceInsideGenerics
+## spaceInsideGenerics
 
-# 52. spaceInsideParens
+## spaceInsideParens
 
 ```swift
 private func fetchChangePhoneNumber(attach policy: Policy,
@@ -536,7 +536,7 @@ private func fetchChangePhoneNumber(attach policy: Policy,
 
 ```
 
-# 53. strongOutlets
+## strongOutlets
 
 ```swift
 
@@ -548,9 +548,9 @@ private func fetchChangePhoneNumber(attach policy: Policy,
 
 ```
 
-# 54. strongifiedSelf
+## strongifiedSelf
 
-# 55. todos
+## todos
 
 ```swift
 // MARK:- UIBarButtonItem actions
@@ -561,7 +561,7 @@ private func fetchChangePhoneNumber(attach policy: Policy,
 
 ```
 
-# 56. trailingClosures 
+## trailingClosures 
 
 ```swift
 extension Array where Element: Hashable {
@@ -582,7 +582,7 @@ extension Array where Element: Hashable {
 
 ```
 
-# 57. trailingCommas 
+## trailingCommas 
 
 ```swift
 let array = [1, 2, 3, 4, 5]
@@ -593,7 +593,7 @@ let array = [1, 2, 3, 4, 5,]
 
 ```
 
-# 58. trailingCommas 
+## trailingCommas 
 
 ```swift
 let array = [1, 2, 3, 4, 5]
@@ -604,9 +604,9 @@ let array = [1, 2, 3, 4, 5,]
 
 ```
 
-# 59. trailingSpace(移除空格)
+## trailingSpace(移除空格)
 
-# 60. typeSugar
+## typeSugar
 
 ```swift
 var array: Array<Element> { map { $0 } }
@@ -619,7 +619,7 @@ var value: [String: String]
 
 ```
 
-# 61. unusedArguments
+## unusedArguments
 
 ```swift
 func didReceive(_ notification: UNNotification) {
@@ -634,7 +634,7 @@ func didReceive(_: UNNotification) {
 
 ```
 
-# 62. void
+## void
 
 ```swift
 var didFinishedUpdateMessageList: (() -> ())? = nil
@@ -645,9 +645,9 @@ var didFinishedUpdateMessageList: (() -> Void)? = nil
 
 ```
 
-# 63. wrap
+## wrap
 
-# 64. wrapArguments
+## wrapArguments
 
 ```swift
 sendEvent(with: event,
@@ -664,9 +664,9 @@ sendEvent(with: event,
 
 ```
 
-# 65. wrapAttributes
+## wrapAttributes
 
-# 66. wrapMultilineStatementBraces
+## wrapMultilineStatementBraces
 
 ```swift
 if AppCore.shared.aliveVerifyFlag != verifyFlag ||
@@ -684,7 +684,7 @@ if AppCore.shared.aliveVerifyFlag != verifyFlag ||
 
 ```
 
-# 67. yodaConditions
+## yodaConditions
 
 ```swift
 if false == jsonMRT.arrayValue.isEmpty {}
@@ -695,7 +695,7 @@ if jsonMRT.arrayValue.isEmpty == false {}
 
 ```
 
-# 68. assertionFailures
-# 69. duplicateImports
-# 70. redundantClosure
-# 71. sortDeclarations
+## assertionFailures
+## duplicateImports
+## redundantClosure
+## sortDeclarations
